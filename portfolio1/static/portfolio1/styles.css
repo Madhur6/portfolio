@@ -1,0 +1,154 @@
+#blue{
+  color: lightskyblue;
+}
+#green{
+  color: springgreen;
+}
+
+.sidebar{
+  height: 100vh;
+}
+
+#contact_me{
+  margin-top: 7%;
+  border: 1px solid lightgray;
+  border-radius: 11px;
+  padding: 11px;
+  width: 30%;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+
+.home {
+  height: 100vh;
+  padding: 0 4%;
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-family: cursive;
+}
+
+.home-content{
+  max-width: 900px;
+}
+
+.home-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  transition: .4s;
+}
+
+.home-content h3 {
+  font-size: 33px;
+  font-weight: 700;
+  transition: .5s;
+}
+
+.home-content p {
+  font-size: 19px;
+  margin: 20px 0 40px;
+  transition: .6s;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.home-content h2:hover, h1:hover, h3:hover, p:hover {
+  color: rgb(90, 139, 196);
+}
+
+.home-content h1:active, h3:active, p:active {
+  color: lightskyblue;
+}
+
+.home-content .box {
+  background: transparent;
+  height: 60px;
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.home-content .box a {
+  border: 2px solid rgb(64, 114, 64);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 12px;
+  margin: 10px;
+  text-decoration: none;
+  background: transparent;
+  color: gray;
+  transition: .2s;
+}
+
+.home-content .box a:hover{
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.social {
+  position: absolute;
+  bottom: 60px;
+  width: 240px;
+  height: 30px;
+}
+
+.social a {
+  position: relative;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-decoration: none;
+  overflow: hidden;
+  display: inline-flex;
+  padding: 10px;
+  margin-right: 20px;
+  transition: .3s ease;
+  color: black;
+}
+
+.social a:hover {
+  background: peachpuff;
+}
+
+.img-container{
+  position: relative;
+  right: 10px;
+}
+
+.img{
+  opacity: 0.7;
+  transition: 0.6s ease-in-out;
+}
+
+.img:hover{
+  opacity: 0.9;
+  transform: scale(1.1); 
+}
+
+
+
+.redirect{
+  margin-top: 20px;
+  border: 1px solid;
+  border-radius: 9px;
+  border-style: none;
+  transition: .2s ease;
+}
+
+.redirect:hover{
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.redirect > a{
+  text-decoration: none;
+  font-size: small;
+  color: gray;
+}
+
+.project-links{
+  color:gray;
+  text-decoration: none;
+  transition: .4s ease-in;
+}

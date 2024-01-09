@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            detail-projects
+        </title>
+        <link rel="stylesheet" href="{% static 'portfolio1/styles.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/b930e26f61.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="card p-3 m-3 shadow-sm">
+            <h1> {{content|safe}} </h1>
+            <div>
+                {% if redirect_url %}
+                    <button class="redirect"><a style="text-decoration: none; color:gray;" href="{{ redirect_url }}"> &laquo; go back &raquo; </a></button> 
+                {% endif %}
+            </div>
+        </div>
+    </body>
+</html>

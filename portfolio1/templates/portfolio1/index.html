@@ -1,0 +1,28 @@
+{% extends 'portfolio1/layout.html' %}
+{% load static %}
+{% block body %}
+
+{% if getInTouch %}
+<div class="alert-sm p-1 rounded alert-success col-md-9">
+    <h4> {{getInTouch}} </h4>
+</div>
+{% endif %}
+
+
+<section class="home" style="background-image: url('{{ MEDIA_URL }}media/background.jpg'); background-size: cover; background-position: center;">
+    <div class="home-content card p-3 shadow">
+        <h2 style="font-family:Amatic sc; font-size: 3em; font-weight: bold;">Hi! I am <span id="green">M</span>adhur<span id="blue">.</span></h2>
+        <hr>
+        <h3 style="font-family: 'Roboto', sans-serif; font-size: 1.5em;">&laquo; Software Developer &raquo;</h3>
+        <p style="line-height: 1.6;">Welcome to my digital realm! <br> I'm Madhur, a passionate software developer dedicated to crafting elegant and efficient solutions.<br> From coding web applications to creating seamless user experiences, I thrive on turning ideas into reality. <br>Let's embark on a journey of innovation and excellence!</p>
+
+        <div class="box">
+            <a href="{% url 'contact' %}" style="background-color: #3498db; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">Work with me</a>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,320L20,277.3C40,235,80,149,120,128C160,107,200,149,240,160C280,171,320,149,360,128C400,107,440,85,480,64C520,43,560,21,600,42.7C640,64,680,128,720,160C760,192,800,192,840,165.3C880,139,920,85,960,58.7C1000,32,1040,32,1080,64C1120,96,1160,160,1200,192C1240,224,1280,224,1320,229.3C1360,235,1400,245,1420,250.7L1440,256L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+    </div>
+    <span class="img-container"><img class="img" alt="image" src="{% static 'portfolio1/cool.png' %}" width="300"></span>
+</section>
+
+
+{% endblock %}

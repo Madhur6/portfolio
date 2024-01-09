@@ -1,0 +1,52 @@
+{% extends 'portfolio1/layout.html' %}
+{% load static %}
+{% block body %}
+<h1 class="heading m-3"> <span id="blue">Ge</span>t in <span id="green">Tou</span>ch </h1>
+
+<div class="card rounded border border-light p-3 col-md-5 shadow-sm">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href=""><i class="fab fa-linkedin"></i> Linkedin </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href=""><i class="fab fa-instagram"></i> Instagram </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href=""><i class="fab fa-github"></i> Github </a>
+        </li>
+    </ul>
+</div>
+<hr>
+
+<div class="form col-md-8 card border rounded p-3 bg-light-subtle">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <input type="text" name="name" id="text" class="form-control" required placeholder="Enter your name" autofocus autocomplete="new-password">
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" id="email" class="form-control" required placeholder="Enter your email" autocomplete="new-password">
+        </div>
+        <div class="form-group">
+            <input type="tel" name="telephone" id="number" class="form-control-sm" placeholder="your mob. no." autocomplete="new-password">
+        </div>
+        <div class="form-group">
+            <textarea rows="2" name="comment" cols="2" required placeholder="any comments" class="form-control" autocomplete="new-password"></textarea>
+        </div>
+        <input type="submit" id="submit" value="Get in Touch" class="btn btn-info">
+    </form>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,96L20,85.3C40,75,80,53,120,74.7C160,96,200,160,240,154.7C280,149,320,75,360,90.7C400,107,440,213,480,229.3C520,245,560,171,600,149.3C640,128,680,160,720,160C760,160,800,128,840,106.7C880,85,920,75,960,90.7C1000,107,1040,149,1080,192C1120,235,1160,277,1200,250.7C1240,224,1280,128,1320,96C1360,64,1400,96,1420,112L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+</div>
+
+<!-- <div class="contact" id="contact_me">
+    <h4 class="card-title text-muted"> Contact details </h4>
+    <div>
+        <label style="display: inline-block; width: 100px;"> phone: </label>
+        <input disabled placeholder="+91 6350248057">
+    </div>
+    <div>
+        <label style="display: inline-block; width: 100px;"> email: </label>
+        <input disabled placeholder="madhurp090@gmail.com">
+    </div> -->
+</div>
+{% endblock %}
