@@ -7,10 +7,10 @@ Welcome to the Portfolio App! This Django app serves as a portfolio showcase whe
 ## Features
 
 - **Project Showcase:**
-  - Display your projects with detailed information.
+  - Display my projects with detailed information.
 
 - **Contact Form:**
-  - Allow visitors to get in touch with you through a contact form.
+  - Allow visitors to get in touch with me through a contact form.
 
 - **Markdown Support:**
   - Utilize Markdown to format project details easily.
