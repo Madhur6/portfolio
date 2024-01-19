@@ -120,14 +120,6 @@
 </details>
 
 <details>
-  <summary><strong>Folder Structure</strong></summary>
-
-  - `network/`: Django app folder containing the main app logic.
-  - `templates/`: HTML templates for the app's pages.
-  - `static/`: Static files such as CSS styles.
-</details>
-
-<details>
   <summary><strong>Usage</strong></summary>
 
   - **Post and Comment**:
